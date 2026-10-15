@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupali Mehendi Studio | Luxury Bridal Henna Artist</title>
+  <meta name="description"
+    content="Handcrafted royal bridal henna, delicate Arabic florals, and custom organic mehendi designs by Artist Rupali. Reserve dates privately via email and Instagram.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            henna: {
+              900: '#150906',
+              800: '#2c120a',
+              700: '#471c10',
+              600: '#7a2f18',
+              500: '#b44a24',
+              gold: '#e0a94d',
+              goldLight: '#fbe8a6',
+              emerald: '#081c15',
+              emeraldDeep: '#05130e'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            display: ['Rozha One', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom Luxury Glass & Shimmer Effects */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fbe8a6 0%, #e0a94d 50%, #9f6b1e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .royal-border {
+      border: 1px solid rgba(224, 169, 77, 0.25);
+    }
+
+    .royal-card {
+      background: linear-gradient(145deg, rgba(32, 14, 9, 0.7) 0%, rgba(13, 27, 21, 0.75) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(224, 169, 77, 0.22);
+    }
+
+    .royal-card:hover {
+      border-color: rgba(224, 169, 77, 0.6);
+      box-shadow: 0 12px 35px -8px rgba(224, 169, 77, 0.2);
+    }
+
+    /* Ambient glow circles */
+    .glow-radial-gold {
+      background: radial-gradient(circle, rgba(224, 169, 77, 0.16) 0%, rgba(0, 0, 0, 0) 70%);
+    }
+
+    .glow-radial-emerald {
+      background: radial-gradient(circle, rgba(16, 75, 57, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+    }
+
+    /* Subtle photo tilt on hover */
+    .henna-img-card {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .henna-img-card:hover img {
+      transform: scale(1.06);
+    }
+
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-henna-900 text-stone-100 font-sans selection:bg-henna-gold selection:text-henna-900 overflow-x-hidden">
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="fixed top-0 left-1/4 w-96 h-96 glow-radial-gold pointer-events-none z-0"></div>
+  <div class="fixed top-1/3 right-10 w-[500px] h-[500px] glow-radial-emerald pointer-events-none z-0"></div>
+
+  <!-- Announcement Bar -->
+  <div
+    class="bg-gradient-to-r from-henna-800 via-henna-700 to-henna-800 text-center py-2 px-4 text-xs md:text-sm font-medium tracking-wide text-henna-goldLight border-b border-henna-gold/20 relative z-20 flex items-center justify-center gap-2">
+    <span class="inline-block animate-bounce">✨</span>
+    <span><strong>Wedding Season Bookings Open:</strong> Reserve your bridal date with Rupali • 100% Organic Herbal
+      Henna • Direct Private Inquiries</span>
+    <span class="hidden md:inline-block animate-bounce">✨</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 bg-henna-900/85 backdrop-blur-md border-b border-henna-gold/15 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-3 group">
+        <div
+          class="w-10 h-10 rounded-full border border-henna-gold/50 bg-henna-800/80 flex items-center justify-center text-henna-gold shadow-md group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-gem text-sm"></i>
+        </div>
+        <div>
+          <h1 class="font-display tracking-wider text-xl md:text-2xl gold-gradient-text leading-none">RUPALI</h1>
+          <span class="text-[9px] uppercase tracking-[0.25em] text-stone-400 font-semibold">Bridal Henna Artist</span>
+        </div>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-stone-300">
+        <a href="#gallery" class="hover:text-henna-gold transition-colors">Portfolio</a>
+        <a href="#services" class="hover:text-henna-gold transition-colors">Services</a>
+        <a href="#inquiry" class="hover:text-henna-gold transition-colors">Check Availability</a>
+        <a href="#care" class="hover:text-henna-gold transition-colors">Henna Care</a>
+        <a href="#reviews" class="hover:text-henna-gold transition-colors">Real Brides</a>
+      </nav>
+
+      <!-- Header CTAs (Phone-number-free) -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a id="nav-ig-link" href="https://instagram.com/rupali_mehendi_studio" target="_blank"
+          class="flex items-center gap-2 px-3.5 sm:px-4 py-2 text-xs font-semibold rounded-full border border-pink-500/40 text-pink-300 hover:bg-pink-500/10 hover:border-pink-400 transition-all">
+          <i class="fa-brands fa-instagram text-sm"></i>
+          <span class="hidden xs:inline">Instagram DM</span>
+          <span class="xs:hidden">IG DM</span>
+        </a>
+        <a href="#inquiry"
+          class="flex items-center gap-2 px-3.5 sm:px-4 py-2 text-xs font-bold rounded-full bg-gradient-to-r from-henna-gold to-amber-600 text-henna-900 hover:brightness-110 shadow-lg shadow-henna-gold/20 transition-all">
+          <i class="fa-solid fa-calendar-check text-xs"></i>
+          <span>Reserve Date</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 pt-10 pb-16 md:pt-20 md:pb-28 px-4 sm:px-6 max-w-7xl mx-auto text-center">
+    <div
+      class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full royal-card text-[11px] sm:text-xs md:text-sm text-henna-gold font-semibold mb-6 animate-pulse">
+      <i class="fa-solid fa-certificate"></i>
+      <span>Professional Henna Artist • 1000+ Adorned Brides • 100% Chemical-Free Organic Cones</span>
+    </div>
+
+    <h2
+      class="font-serif text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-stone-100 max-w-4xl mx-auto leading-[1.15] mb-5 sm:mb-6">
+      Royal Bridal Traditions Crafted by <span class="gold-gradient-text italic font-serif">Rupali</span>
+    </h2>
+
+    <p
+      class="max-w-2xl mx-auto text-stone-400 text-xs sm:text-base md:text-lg mb-8 sm:mb-10 font-normal leading-relaxed">
+      From timeless royal bridal peacocks to delicate contemporary Arabic floral trails. I prepare freshly rolled, 100%
+      pure organic herbal henna cones for an intensely deep, dark burgundy stain on your special day.
+    </p>
+
+    <!-- Hero CTA Buttons -->
+    <div
+      class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-md sm:max-w-none mx-auto">
+      <a href="#gallery"
+        class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gradient-to-r from-henna-gold via-amber-500 to-henna-gold text-henna-900 font-extrabold text-sm md:text-base shadow-xl shadow-henna-gold/20 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3">
+        <i class="fa-solid fa-images"></i>
+        <span>Explore Design Gallery</span>
+      </a>
+      <a href="#inquiry"
+        class="w-full sm:w-auto px-7 py-3.5 rounded-full royal-card text-stone-200 font-bold text-sm md:text-base hover:text-henna-gold hover:border-henna-gold/60 transition-all flex items-center justify-center gap-3">
+        <i class="fa-solid fa-envelope-open-text text-henna-gold"></i>
+        <span>Check Date Availability</span>
+      </a>
+    </div>
+
+    <!-- Stats Ticker -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-12 sm:mt-16 max-w-4xl mx-auto">
+      <div class="p-3.5 sm:p-4 rounded-2xl royal-card text-center">
+        <div class="font-display text-2xl sm:text-3xl gold-gradient-text">1,000+</div>
+        <div class="text-[10px] sm:text-xs text-stone-400 mt-1 uppercase tracking-wider font-semibold">Brides Adorned
+        </div>
+      </div>
+      <div class="p-3.5 sm:p-4 rounded-2xl royal-card text-center">
+        <div class="font-display text-2xl sm:text-3xl gold-gradient-text">100%</div>
+        <div class="text-[10px] sm:text-xs text-stone-400 mt-1 uppercase tracking-wider font-semibold">Pure Herbal Cones
+        </div>
+      </div>
+      <div class="p-3.5 sm:p-4 rounded-2xl royal-card text-center">
+        <div class="font-display text-2xl sm:text-3xl gold-gradient-text">4.9 ★</div>
+        <div class="text-[10px] sm:text-xs text-stone-400 mt-1 uppercase tracking-wider font-semibold">Client Love
+          Rating</div>
+      </div>
+      <div class="p-3.5 sm:p-4 rounded-2xl royal-card text-center">
+        <div class="font-display text-2xl sm:text-3xl gold-gradient-text">Custom</div>
+        <div class="text-[10px] sm:text-xs text-stone-400 mt-1 uppercase tracking-wider font-semibold">Portraits &
+          Motifs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Portfolio Gallery (All 11 Real Photos) -->
+  <section id="gallery" class="relative z-10 py-12 sm:py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-8 sm:mb-10">
+      <span class="text-xs uppercase tracking-[0.3em] text-henna-gold font-bold">Handcrafted Portfolio</span>
+      <h3 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold mt-2 text-stone-100">Rupali's Signature Creations
+      </h3>
+      <p class="text-stone-400 text-xs sm:text-sm max-w-xl mx-auto mt-2">Browse real bridal and festive masterpieces.
+        Click on any pattern to zoom in and inquire directly with Rupali.</p>
+    </div>
+
+    <!-- Filter Buttons (Scrollable on small devices) -->
+    <div
+      class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-3 sm:pb-0 mb-8 sm:mb-10 no-scrollbar"
+      id="filter-buttons">
+      <button onclick="filterGallery('all', this)"
+        class="filter-btn active whitespace-nowrap px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-henna-gold text-henna-900 shadow-md">
+        All Works (11)
+      </button>
+      <button onclick="filterGallery('bridal', this)"
+        class="filter-btn whitespace-nowrap px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all royal-card text-stone-300 hover:text-henna-gold">
+        Bridal Royal
+      </button>
+      <button onclick="filterGallery('arabic', this)"
+        class="filter-btn whitespace-nowrap px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all royal-card text-stone-300 hover:text-henna-gold">
+        Arabic & Floral
+      </button>
+      <button onclick="filterGallery('peacock', this)"
+        class="filter-btn whitespace-nowrap px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all royal-card text-stone-300 hover:text-henna-gold">
+        Traditional & Peacock
+      </button>
+      <button onclick="filterGallery('festive', this)"
+        class="filter-btn whitespace-nowrap px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all royal-card text-stone-300 hover:text-henna-gold">
+        Jewelry & Festive
+      </button>
+    </div>
+
+    <!-- Gallery Grid (11 Total Cards) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6" id="gallery-container">
+
+      <!-- Card 1 (photo 1) -->
+      <div class="gallery-item bridal royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (1).png', 'Royal Intricate Bridal Palms', 'Bridal Royal', 'Symmetrical handcrafted bridal palms with sacred kalash motifs, geometric jaali work, and layered wrist bracelets.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (1).png" alt="Royal Intricate Bridal Palms"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Bridal+Henna+Palm'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Bridal Royal</span>
+            <p class="font-serif text-lg font-bold text-white">Royal Intricate Bridal Palms</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Royal Bridal Palms</h4>
+            <span class="text-xs text-henna-gold">Traditional Jaali & Cuffs</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Bridal</span>
+        </div>
+      </div>
+
+      <!-- Card 2 (photo 2) -->
+      <div class="gallery-item bridal royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (2).png', 'Detailed Wrist & Palm Cuffs', 'Bridal Royal', 'Ultra-refined micro jaali netting paired with floral wrist cuffs, perfect for pre-wedding & bridal elegance.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (2).png" alt="Detailed Wrist & Palm Cuffs"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Wrist+Cuff+Work'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Bridal Royal</span>
+            <p class="font-serif text-lg font-bold text-white">Detailed Wrist & Palm Cuffs</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Wrist & Palm Cuffs</h4>
+            <span class="text-xs text-henna-gold">Micro-Detailing</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Intricate</span>
+        </div>
+      </div>
+
+      <!-- Card 3 (photo 3) -->
+      <div class="gallery-item bridal royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (3).png', 'Sacred Kalash & Symmetrical Palms', 'Bridal Royal', 'Grand symmetric palms with sacred kalash motifs, geometric jaali lattice, and intricate finger band accents.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (3).png" alt="Sacred Kalash & Symmetrical Palms"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Symmetrical+Palms'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Bridal Royal</span>
+            <p class="font-serif text-lg font-bold text-white">Sacred Kalash Symmetry</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Symmetrical Kalash Palms</h4>
+            <span class="text-xs text-henna-gold">Traditional Symmetry</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Bridal</span>
+        </div>
+      </div>
+
+      <!-- Card 4 (photo 4) -->
+      <div class="gallery-item bridal royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (4).png', 'Traditional Full Arm Bridal Work', 'Bridal Royal', 'Complete royal bridal arm length artwork featuring intricate checks, shaded petals, and traditional temple architectural curves.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (4).png" alt="Traditional Full Arm Bridal Work"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Full+Arm+Bridal'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Bridal Royal</span>
+            <p class="font-serif text-lg font-bold text-white">Full Arm Bridal Royal Pattern</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Full Arm Bridal Heritage</h4>
+            <span class="text-xs text-henna-gold">Elbow-to-Tip Coverage</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Full
+            Arm</span>
+        </div>
+      </div>
+
+      <!-- Card 5 (photo 5) -->
+      <div class="gallery-item arabic festive royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (5).png', 'Floral & Vine Shaded Palm', 'Arabic & Floral', 'Modern negative space floral composition with bold shaded lotus petals and delicate finger vines.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (5).png" alt="Floral & Vine Shaded Palm"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Floral+Arabic+Palm'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Arabic & Floral</span>
+            <p class="font-serif text-lg font-bold text-white">Floral & Shaded Vine Work</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Botanical Shaded Palms</h4>
+            <span class="text-xs text-henna-gold">Negative Space & Vines</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Festive</span>
+        </div>
+      </div>
+
+      <!-- Card 6 (photo 6) -->
+      <div class="gallery-item arabic festive bridal royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (6).png', 'Rose & Jaali Floral Composition', 'Arabic & Floral', 'Delicately shaded garden roses with negative space leaves, checkerboard jaali wrist cuffs, and intricate leafy trails.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (6).png" alt="Rose & Jaali Floral Composition"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Rose+Floral+Jaali'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Arabic & Floral</span>
+            <p class="font-serif text-lg font-bold text-white">Rose & Jaali Floral Palm</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Rose & Jaali Garden</h4>
+            <span class="text-xs text-henna-gold">Negative Space Elegance</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Festive</span>
+        </div>
+      </div>
+
+      <!-- Card 7 (photo 7) -->
+      <div class="gallery-item peacock bridal royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (7).png', 'Royal Mayur (Peacock) Forearm Design', 'Traditional & Peacock', 'Iconic Indian wedding peacock motif with flowing ornate feathers, paired with fine jaali meshwork across the hand.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (7).png" alt="Royal Mayur Forearm Design"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Royal+Peacock+Henna'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Traditional & Peacock</span>
+            <p class="font-serif text-lg font-bold text-white">Royal Mayur Feathers & Jaali</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Royal Mayur (Peacock)</h4>
+            <span class="text-xs text-henna-gold">Ornate Traditional Feather</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Heritage</span>
+        </div>
+      </div>
+
+      <!-- Card 8 (photo 8) -->
+      <div class="gallery-item arabic festive royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (8).png', 'Arabic Mandala Floral Backhand', 'Arabic & Floral', 'Bold contoured mandala with flowing leaves, leafy trail wrist crest, and elegant standalone finger rings.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (8).png" alt="Arabic Mandala Floral Backhand"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Arabic+Mandala+Henna'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Arabic & Floral</span>
+            <p class="font-serif text-lg font-bold text-white">Backhand Floral Mandala</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Arabic Floral Mandala</h4>
+            <span class="text-xs text-henna-gold">Backhand Bold Trail</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Arabic</span>
+        </div>
+      </div>
+
+      <!-- Card 9 (photo 9) -->
+      <div class="gallery-item festive bridal royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (9).png', 'Royal Hanging Jewelry / Hathphool Henna', 'Jewelry & Festive', 'Exquisite jewelry-inspired henna mimicry with pearl bead chain strings, delicate jhumka drapes, and ornate lace cuffs.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (9).png" alt="Royal Hanging Jewelry Henna"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Jewelry+Hathphool+Henna'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Jewelry & Festive</span>
+            <p class="font-serif text-lg font-bold text-white">Royal Hathphool Jewelry Henna</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Jewelry Hathphool Drapes</h4>
+            <span class="text-xs text-henna-gold">Delicate Pearl Chain Look</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Jewelry</span>
+        </div>
+      </div>
+
+      <!-- Card 10 (photo 10) -->
+      <div class="gallery-item arabic festive royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (10).png', 'Contemporary Arabic Geometric Backhand', 'Arabic & Floral', 'Sleek modern lines combined with diamond accents, leaf silhouettes, and deep stain highlights.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (10).png" alt="Contemporary Arabic Backhand"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Contemporary+Arabic'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Arabic & Floral</span>
+            <p class="font-serif text-lg font-bold text-white">Contemporary Geometric Backhand</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Geometric Contemporary</h4>
+            <span class="text-xs text-henna-gold">Engagement & Festive Choice</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Modern</span>
+        </div>
+      </div>
+
+      <!-- Card 11 (photo 11) -->
+      <div class="gallery-item arabic festive royal-card rounded-2xl overflow-hidden p-3.5 group cursor-pointer"
+        onclick="openLightbox('photo (11).png', 'Diamond Medallion Arabic Backhand', 'Arabic & Floral', 'Intricate diamond center medallion with cascading floral arches, shaded leaf vine fingers, and bold shading.')">
+        <div class="relative overflow-hidden rounded-xl h-80 bg-henna-800">
+          <img src="photo (11).png" alt="Diamond Medallion Arabic Backhand"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onerror="this.src='https://placehold.co/600x800/2c120a/e0a94d?text=Diamond+Medallion+Henna'">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+            <span class="text-[10px] uppercase tracking-wider text-henna-gold font-bold">Arabic & Floral</span>
+            <p class="font-serif text-lg font-bold text-white">Diamond Medallion Backhand</p>
+            <span class="text-xs text-stone-300 mt-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Tap to Zoom
+              & Inquire</span>
+          </div>
+        </div>
+        <div class="pt-3 px-1 flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-stone-200">Diamond Medallion Backhand</h4>
+            <span class="text-xs text-henna-gold">Cascading Vines & Arches</span>
+          </div>
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-henna-gold/10 text-henna-gold border border-henna-gold/20 font-semibold">Modern</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Availability & Direct Email Booking Form (Privacy Protected: Zero Phone Leak) -->
+  <section id="inquiry"
+    class="relative z-10 py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-transparent via-henna-emeraldDeep/60 to-transparent">
+    <div class="max-w-4xl mx-auto royal-card rounded-3xl p-5 sm:p-10 border border-henna-gold/30">
+
+      <div class="text-center mb-8">
+        <span class="text-xs uppercase tracking-widest text-henna-gold font-bold">Private Booking Reservation</span>
+        <h3 class="font-serif text-2xl sm:text-4xl font-bold mt-1 text-stone-100">Check Rupali's Availability</h3>
+        <p class="text-stone-400 text-xs sm:text-sm mt-1">Submit your bridal event details below. Inquiries are sent
+          directly to Rupali's private inbox without exposing any personal contact numbers.</p>
+
+        <!-- Privacy Badge -->
+        <div
+          class="inline-flex items-center gap-1.5 px-3 py-1 mt-3 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-[11px] text-emerald-300 font-medium">
+          <i class="fa-solid fa-shield-halved text-xs"></i>
+          <span>100% Private & Direct • No Public Phone Numbers • Direct Artist Response</span>
+        </div>
+      </div>
+
+      <form id="booking-inquiry-form" onsubmit="handleInquirySubmit(event)">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+          <!-- Left Column: Event Specifications -->
+          <div class="space-y-4">
+
+            <!-- Event Type -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-2">1. Select Event
+                Type</label>
+              <div class="grid grid-cols-2 gap-2" id="pkg-selector">
+                <button type="button" onclick="selectEvent('Royal Bridal Mehendi', this)"
+                  class="pkg-opt active p-3 rounded-xl border border-henna-gold bg-henna-gold/15 text-left text-xs font-semibold text-stone-100 transition-all">
+                  <div class="text-henna-gold font-bold">Royal Bridal</div>
+                  <div class="text-[10px] text-stone-400">Full arms to elbow + feet</div>
+                </button>
+                <button type="button" onclick="selectEvent('Classic Bridal', this)"
+                  class="pkg-opt p-3 rounded-xl border border-stone-700 bg-stone-900/50 text-left text-xs font-semibold text-stone-300 transition-all hover:border-henna-gold/50">
+                  <div class="text-henna-gold font-bold">Classic Bridal</div>
+                  <div class="text-[10px] text-stone-400">Mid-forearm + feet tops</div>
+                </button>
+                <button type="button" onclick="selectEvent('Engagement / Roka', this)"
+                  class="pkg-opt p-3 rounded-xl border border-stone-700 bg-stone-900/50 text-left text-xs font-semibold text-stone-300 transition-all hover:border-henna-gold/50">
+                  <div class="text-henna-gold font-bold">Engagement / Roka</div>
+                  <div class="text-[10px] text-stone-400">Both hands wrist coverage</div>
+                </button>
+                <button type="button" onclick="selectEvent('Festive / Family Group', this)"
+                  class="pkg-opt p-3 rounded-xl border border-stone-700 bg-stone-900/50 text-left text-xs font-semibold text-stone-300 transition-all hover:border-henna-gold/50">
+                  <div class="text-henna-gold font-bold">Festive / Family</div>
+                  <div class="text-[10px] text-stone-400">Customized palms & backs</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Date Input -->
+            <div>
+              <label for="event-date" class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">2.
+                Event Date *</label>
+              <input type="date" id="event-date" required
+                class="w-full bg-henna-900 border border-stone-700 rounded-xl px-4 py-2.5 text-sm text-stone-200 focus:outline-none focus:border-henna-gold">
+            </div>
+
+            <!-- City / Location -->
+            <div>
+              <label for="event-location"
+                class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">3. City / Area *</label>
+              <input type="text" id="event-location" required placeholder="e.g. Faridabad, South Delhi, Gurugram..."
+                class="w-full bg-henna-900 border border-stone-700 rounded-xl px-4 py-2.5 text-sm text-stone-200 focus:outline-none focus:border-henna-gold placeholder:text-stone-600">
+            </div>
+
+            <!-- Family / Bridesmaids Count Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-1.5">
+                <label for="guest-slider" class="text-xs font-bold uppercase tracking-wider text-stone-300">4. Extra
+                  Bridesmaids / Guests</label>
+                <span class="text-xs font-bold text-henna-gold" id="guest-count-label">4 Guests</span>
+              </div>
+              <input type="range" id="guest-slider" min="0" max="25" value="4" step="1" oninput="updateGuestLabel()"
+                class="w-full accent-henna-gold cursor-pointer">
+              <div class="flex justify-between text-[10px] text-stone-500 mt-1">
+                <span>0 (Only Bride)</span>
+                <span>10 Guests</span>
+                <span>25+ Guests</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Client Contact Information -->
+          <div
+            class="bg-henna-900/90 rounded-2xl p-5 sm:p-6 border border-henna-gold/25 flex flex-col justify-between space-y-4">
+
+            <div class="space-y-4">
+              <div class="flex items-center justify-between pb-2 border-b border-stone-800">
+                <span class="text-xs uppercase tracking-wider text-stone-300 font-bold">Your Contact Details</span>
+                <span
+                  class="text-[10px] px-2 py-0.5 rounded-full bg-amber-950 text-amber-300 border border-amber-700/50 flex items-center gap-1">
+                  <i class="fa-solid fa-lock text-[9px]"></i> Private & Secure
+                </span>
+              </div>
+
+              <!-- Client Name -->
+              <div>
+                <label for="client-name"
+                  class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Full Name (Bride /
+                  Host) *</label>
+                <input type="text" id="client-name" required placeholder="e.g. Pooja Sharma"
+                  class="w-full bg-henna-800/70 border border-stone-700 rounded-xl px-4 py-2 text-sm text-stone-200 focus:outline-none focus:border-henna-gold placeholder:text-stone-600">
+              </div>
+
+              <!-- Client Phone (for Rupali to reach THEM) -->
+              <div>
+                <label for="client-phone"
+                  class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Your Phone / WhatsApp
+                  Number *</label>
+                <input type="tel" id="client-phone" required placeholder="e.g. +91 98765 43210"
+                  class="w-full bg-henna-800/70 border border-stone-700 rounded-xl px-4 py-2 text-sm text-stone-200 focus:outline-none focus:border-henna-gold placeholder:text-stone-600">
+                <span class="text-[10px] text-stone-400 mt-1 block">Rupali will contact you directly on this number with
+                  pricing & date slot availability.</span>
+              </div>
+
+              <!-- Client Email -->
+              <div>
+                <label for="client-email"
+                  class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Your Email Address
+                  *</label>
+                <input type="email" id="client-email" required placeholder="e.g. pooja@example.com"
+                  class="w-full bg-henna-800/70 border border-stone-700 rounded-xl px-4 py-2 text-sm text-stone-200 focus:outline-none focus:border-henna-gold placeholder:text-stone-600">
+              </div>
+
+              <!-- Preferred Pattern / Design Notes -->
+              <div>
+                <label for="client-notes"
+                  class="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5">Design Preference /
+                  Special Requests</label>
+                <input type="text" id="client-notes"
+                  placeholder="e.g. Royal Bridal Palms, customized Dulha portrait, etc."
+                  class="w-full bg-henna-800/70 border border-stone-700 rounded-xl px-4 py-2 text-sm text-stone-200 focus:outline-none focus:border-henna-gold placeholder:text-stone-600">
+              </div>
+            </div>
+
+            <!-- Submit Action & Alternative IG DM -->
+            <div class="pt-2">
+              <button type="submit" id="submit-inquiry-btn"
+                class="w-full py-3.5 rounded-xl bg-gradient-to-r from-henna-gold via-amber-500 to-henna-gold text-henna-900 font-extrabold text-sm shadow-xl shadow-henna-gold/20 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span id="submit-btn-text">Send Booking Inquiry via Email</span>
+              </button>
+
+              <div class="relative flex py-3 items-center">
+                <div class="flex-grow border-t border-stone-800"></div>
+                <span class="flex-shrink mx-3 text-[10px] uppercase tracking-wider text-stone-500">Or Chat
+                  Privately</span>
+                <div class="flex-grow border-t border-stone-800"></div>
+              </div>
+
+              <a id="form-ig-btn" href="https://instagram.com/rupali_mehendi_studio" target="_blank"
+                class="w-full py-2.5 rounded-xl border border-pink-500/40 text-pink-300 hover:bg-pink-500/10 hover:border-pink-400 font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                <i class="fa-brands fa-instagram text-sm"></i>
+                <span>Message Rupali on Instagram DM</span>
+              </a>
+
+              <div id="inquiry-status-msg" class="hidden mt-3 p-3 rounded-xl text-xs"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Curated Service Tiers (Without Public Prices) -->
+  <section id="services" class="relative z-10 py-12 sm:py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-10 sm:mb-12">
+      <span class="text-xs uppercase tracking-[0.3em] text-henna-gold font-bold">Bespoke Bridal Services</span>
+      <h3 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold mt-2 text-stone-100">Tailored Mehendi Experiences
+      </h3>
+      <p class="text-stone-400 text-xs sm:text-sm mt-1 max-w-md mx-auto">Custom packages crafted for your unique bridal
+        preferences and venue requirements.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Tier 1 -->
+      <div class="royal-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold text-henna-gold uppercase tracking-wider">For Roka & Festive</span>
+          <h4 class="font-serif text-2xl font-bold text-stone-100 mt-1">Festive & Engagement</h4>
+          <p class="text-xs text-stone-400 my-4 leading-relaxed">Perfect for engagements, baby showers, Teej, Karwa
+            Chauth, and close family gatherings.</p>
+
+          <ul class="space-y-3 text-xs text-stone-300">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Both sides hand
+              coverage up to wrist</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Elegant floral Arabic
+              or Mandala patterns</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Fresh lavender organic
+              cones</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Deep rich mahogany
+              stain assurance</li>
+          </ul>
+        </div>
+        <button type="button" onclick="selectAndScrollPackage('Engagement / Roka')"
+          class="mt-8 block w-full text-center py-3 rounded-xl border border-henna-gold/40 text-henna-gold font-bold text-xs hover:bg-henna-gold hover:text-henna-900 transition-all cursor-pointer">Select
+          & Inquire</button>
+      </div>
+
+      <!-- Tier 2 (Highlighted) -->
+      <div
+        class="royal-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative border-2 border-henna-gold shadow-2xl shadow-henna-gold/15">
+        <div
+          class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-henna-gold to-amber-500 text-henna-900 text-[10px] uppercase font-extrabold px-4 py-1 rounded-full tracking-wider whitespace-nowrap">
+          Most Loved Bridal Service
+        </div>
+        <div>
+          <span class="text-xs font-bold text-henna-gold uppercase tracking-wider">Complete Wedding Coverage</span>
+          <h4 class="font-serif text-2xl font-bold text-stone-100 mt-1">Royal Heritage Bridal</h4>
+          <p class="text-xs text-stone-400 my-4 leading-relaxed">Rupali's signature bridal artwork featuring
+            personalized groom figures, sacred peacocks, and fine symmetry.</p>
+
+          <ul class="space-y-3 text-xs text-stone-300">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Both arms up to elbows
+              (Palms & Backs)</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Ornate bridal feet
+              artwork up to ankles</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Custom Dulha-Dulhan
+              name & wedding date hidden</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Complimentary
+              lemon-sugar seal & clove spray guidance</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Additional family
+              hands customization</li>
+          </ul>
+        </div>
+        <button type="button" onclick="selectAndScrollPackage('Royal Bridal Mehendi')"
+          class="mt-8 block w-full text-center py-3.5 rounded-xl bg-gradient-to-r from-henna-gold to-amber-600 text-henna-900 font-extrabold text-xs shadow-lg hover:brightness-110 transition-all cursor-pointer">Select
+          & Inquire</button>
+      </div>
+
+      <!-- Tier 3 -->
+      <div class="royal-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold text-henna-gold uppercase tracking-wider">Grand Wedding Extravaganza</span>
+          <h4 class="font-serif text-2xl font-bold text-stone-100 mt-1">Imperial Maharani Group</h4>
+          <p class="text-xs text-stone-400 my-4 leading-relaxed">Full bridal custom artwork plus team assistance for all
+            family members and bridesmaids.</p>
+
+          <ul class="space-y-3 text-xs text-stone-300">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Ultra-dense Full Arm
+              Bridal Henna (above elbow)</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Royal feet artwork up
+              to mid-calf</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Assistant artist
+              support for entire bridal family</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-henna-gold"></i> Destination wedding
+              venue flexibility</li>
+          </ul>
+        </div>
+        <button type="button" onclick="selectAndScrollPackage('Festive / Family Group')"
+          class="mt-8 block w-full text-center py-3 rounded-xl border border-henna-gold/40 text-henna-gold font-bold text-xs hover:bg-henna-gold hover:text-henna-900 transition-all cursor-pointer">Select
+          & Inquire</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Henna Care & Secret Stain Tips -->
+  <section id="care" class="relative z-10 py-12 sm:py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="royal-card rounded-3xl p-5 sm:p-12 border border-henna-gold/30">
+      <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+        <span class="text-xs uppercase tracking-[0.3em] text-henna-gold font-bold">Deep Burgundy Color Guide</span>
+        <h3 class="font-serif text-2xl sm:text-4xl font-bold mt-2 text-stone-100">Rupali's Dark Stain Henna Secrets</h3>
+        <p class="text-stone-400 text-xs sm:text-sm mt-2">Organic henna needs natural warmth to oxidize into a deep,
+          long-lasting mahogany color for your wedding.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="p-4 sm:p-5 rounded-2xl bg-henna-900/60 border border-stone-800">
+          <div
+            class="w-9 h-9 rounded-full bg-henna-gold/10 text-henna-gold flex items-center justify-center font-bold text-sm mb-3">
+            1</div>
+          <h5 class="font-serif text-base sm:text-lg font-bold text-stone-200">Keep It On For 6-8 Hrs</h5>
+          <p class="text-xs text-stone-400 mt-1 leading-relaxed">Let the henna dry naturally. Keep the paste on your
+            skin for a minimum of 6 hours, or overnight for the deepest stain.</p>
+        </div>
+
+        <div class="p-4 sm:p-5 rounded-2xl bg-henna-900/60 border border-stone-800">
+          <div
+            class="w-9 h-9 rounded-full bg-henna-gold/10 text-henna-gold flex items-center justify-center font-bold text-sm mb-3">
+            2</div>
+          <h5 class="font-serif text-base sm:text-lg font-bold text-stone-200">Lemon & Sugar Mist</h5>
+          <p class="text-xs text-stone-400 mt-1 leading-relaxed">Dab warm lemon and sugar syrup with cotton once
+            semi-dry to keep the herbal henna moist and active on the skin.</p>
+        </div>
+
+        <div class="p-4 sm:p-5 rounded-2xl bg-henna-900/60 border border-stone-800">
+          <div
+            class="w-9 h-9 rounded-full bg-henna-gold/10 text-henna-gold flex items-center justify-center font-bold text-sm mb-3">
+            3</div>
+          <h5 class="font-serif text-base sm:text-lg font-bold text-stone-200">Clove Fumes (Laung Dhuni)</h5>
+          <p class="text-xs text-stone-400 mt-1 leading-relaxed">Warm your hands over gentle pan fumes of roasted
+            cloves. The natural heat accelerates henna oxidation intensely.</p>
+        </div>
+
+        <div class="p-4 sm:p-5 rounded-2xl bg-henna-900/60 border border-stone-800">
+          <div
+            class="w-9 h-9 rounded-full bg-henna-gold/10 text-henna-gold flex items-center justify-center font-bold text-sm mb-3">
+            4</div>
+          <h5 class="font-serif text-base sm:text-lg font-bold text-stone-200">No Water for 24 Hours</h5>
+          <p class="text-xs text-stone-400 mt-1 leading-relaxed">Scrape off the dry paste gently using mustard or
+            coconut oil. Avoid soap and direct water exposure for the first 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Bride Testimonials -->
+  <section id="reviews" class="relative z-10 py-12 sm:py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-8 sm:mb-10">
+      <span class="text-xs uppercase tracking-[0.3em] text-henna-gold font-bold">Client Reviews</span>
+      <h3 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold mt-2 text-stone-100">Love from Real Brides</h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+
+      <div class="royal-card rounded-2xl p-5 sm:p-6 relative">
+        <div class="flex text-amber-400 text-xs mb-3">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-stone-300 text-xs sm:text-sm italic leading-relaxed">"Rupali did my bridal mehendi and everyone
+          at my wedding couldn't stop praising the peacock detail! The color turned nearly black-maroon by my wedding
+          night. 100% recommended!"</p>
+        <div class="mt-4 pt-4 border-t border-stone-800 flex items-center gap-3">
+          <div
+            class="w-8 h-8 rounded-full bg-henna-gold/20 text-henna-gold flex items-center justify-center font-bold text-xs">
+            P</div>
+          <div>
+            <div class="text-xs font-bold text-stone-200">Pooja Sharma</div>
+            <div class="text-[10px] text-stone-400">Faridabad Bride</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="royal-card rounded-2xl p-5 sm:p-6 relative border-henna-gold/40">
+        <div class="flex text-amber-400 text-xs mb-3">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-stone-300 text-xs sm:text-sm italic leading-relaxed">"Rupali's speed and neatness is unmatched.
+          No chemical smell at all, smelled like pure lavender and tea-tree oil. She incorporated our love story dates
+          so subtly into the palm!"</p>
+        <div class="mt-4 pt-4 border-t border-stone-800 flex items-center gap-3">
+          <div
+            class="w-8 h-8 rounded-full bg-henna-gold/20 text-henna-gold flex items-center justify-center font-bold text-xs">
+            S</div>
+          <div>
+            <div class="text-xs font-bold text-stone-200">Simran Batra</div>
+            <div class="text-[10px] text-stone-400">Delhi Destination Wedding</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="royal-card rounded-2xl p-5 sm:p-6 relative">
+        <div class="flex text-amber-400 text-xs mb-3">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-stone-300 text-xs sm:text-sm italic leading-relaxed">"Booked Rupali for my sister's engagement
+          and then immediately reserved for her wedding too. Very patient artist, friendly demeanor and extremely clean
+          line work on jewelry patterns."</p>
+        <div class="mt-4 pt-4 border-t border-stone-800 flex items-center gap-3">
+          <div
+            class="w-8 h-8 rounded-full bg-henna-gold/20 text-henna-gold flex items-center justify-center font-bold text-xs">
+            A</div>
+          <div>
+            <div class="text-xs font-bold text-stone-200">Ananya Verma</div>
+            <div class="text-[10px] text-stone-400">Gurugram Bride</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div id="lightbox"
+    class="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl hidden flex items-center justify-center p-3 sm:p-4">
+    <div
+      class="relative max-w-4xl w-full royal-card rounded-2xl sm:rounded-3xl overflow-hidden border border-henna-gold/40 max-h-[92vh] flex flex-col md:flex-row">
+      <!-- Close button -->
+      <button onclick="closeLightbox()"
+        class="absolute top-3 right-3 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-black/60 text-stone-300 hover:text-white flex items-center justify-center hover:bg-henna-gold hover:text-henna-900 transition-all cursor-pointer">
+        <i class="fa-solid fa-xmark text-sm sm:text-lg"></i>
+      </button>
+
+      <!-- Large Image Display -->
+      <div class="w-full md:w-3/5 bg-henna-900 flex items-center justify-center p-3 sm:p-4">
+        <img id="lightbox-img" src="" alt="Zoomed Pattern"
+          class="max-h-[45vh] sm:max-h-[60vh] md:max-h-[80vh] w-auto object-contain rounded-xl shadow-2xl">
+      </div>
+
+      <!-- Info & Direct Action -->
+      <div
+        class="w-full md:w-2/5 p-5 sm:p-8 flex flex-col justify-between bg-gradient-to-b from-henna-800 to-henna-900">
+        <div>
+          <span class="text-xs font-bold text-henna-gold uppercase tracking-wider" id="lightbox-tag">Bridal Royal</span>
+          <h4 class="font-serif text-xl sm:text-3xl font-bold text-stone-100 mt-1" id="lightbox-title">Pattern Title
+          </h4>
+          <p class="text-xs sm:text-sm text-stone-300 mt-3 sm:mt-4 leading-relaxed" id="lightbox-desc">Detailed
+            description of the intricate artwork.</p>
+
+          <div class="mt-4 sm:mt-6 p-3 rounded-xl bg-henna-900/80 border border-stone-800 text-xs text-stone-400">
+            <i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i> Handmade cone • Natural staining time:
+            24-48 hrs
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-8 space-y-2.5">
+          <button onclick="inquireFromLightbox()"
+            class="w-full py-3 rounded-xl bg-gradient-to-r from-henna-gold to-amber-600 text-henna-900 font-extrabold text-xs text-center flex items-center justify-center gap-2 shadow-lg hover:brightness-110 transition-all cursor-pointer">
+            <i class="fa-solid fa-calendar-plus text-sm"></i>
+            <span>Inquire This Exact Design</span>
+          </button>
+          <a id="lightbox-ig-btn" href="https://instagram.com/rupali_mehendi_studio" target="_blank"
+            class="w-full py-2.5 rounded-xl border border-pink-500/40 text-pink-300 hover:bg-pink-500/10 hover:border-pink-400 font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+            <i class="fa-brands fa-instagram text-sm"></i>
+            <span>Send Reference on Instagram</span>
+          </a>
+          <button onclick="closeLightbox()"
+            class="w-full py-2 rounded-xl border border-stone-700 text-stone-400 text-xs hover:text-white cursor-pointer">
+            Back to Gallery
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Sticky Mobile CTA Bar (Zero Phone Leak) -->
+  <div
+    class="fixed bottom-0 left-0 right-0 z-40 bg-henna-900/95 backdrop-blur-md border-t border-henna-gold/25 p-3 px-4 sm:hidden flex items-center justify-between gap-3 shadow-2xl">
+    <div class="text-left">
+      <span class="text-[9px] text-stone-400 uppercase tracking-wider block">Artist Rupali</span>
+      <span class="text-xs font-bold text-henna-gold">Private Bookings Open</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <a id="mobile-ig-link" href="https://instagram.com/rupali_mehendi_studio" target="_blank"
+        class="px-3 py-2 rounded-full border border-pink-500/40 text-pink-300 font-bold text-xs flex items-center gap-1.5">
+        <i class="fa-brands fa-instagram"></i>
+        <span>DM</span>
+      </a>
+      <a href="#inquiry"
+        class="px-4 py-2 rounded-full bg-gradient-to-r from-henna-gold to-amber-600 text-henna-900 font-extrabold text-xs flex items-center gap-2 shadow-md">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Send Inquiry</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer
+    class="relative z-10 border-t border-henna-gold/15 py-10 px-5 text-center text-xs text-stone-500 bg-henna-900 mb-14 sm:mb-0">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-display text-lg gold-gradient-text tracking-widest">RUPALI</span>
+        <span>• Professional Bridal Henna Artist</span>
+      </div>
+      <div>
+        Available for on-location visits across Faridabad, Delhi NCR & Destination Weddings.
+      </div>
+      <div class="flex items-center gap-4 text-stone-400">
+        <a id="footer-ig-link" href="https://instagram.com/rupali_mehendi_studio" target="_blank"
+          class="hover:text-pink-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-brands fa-instagram text-sm"></i>
+          <span>Instagram Profile</span>
+        </a>
+        <span>•</span>
+        <span>Crafted with Pride</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts & Configuration -->
+  <script>
+    // =========================================================================
+    // ⚙️ PRIVACY & BOOKING CONFIGURATION
+    // =========================================================================
+    // 1. Web3Forms Access Key:
+    //    Get your 100% FREE Access Key at https://web3forms.com (takes 30 seconds).
+    //    Enter your email at web3forms.com and paste your key below.
+    //    Your personal phone number is NEVER leaked or required!
+    const WEB3FORMS_ACCESS_KEY = "666aca3c-6568-45da-9a44-b08b21290ed8";
+
+    // 2. Your Instagram Username (without the @ symbol)
+    const INSTAGRAM_HANDLE = "_raas_rupali__03";
+
+    // Synchronize all Instagram links on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      const igUrl = `https://instagram.com/${INSTAGRAM_HANDLE}`;
+      const igDmUrl = `https://ig.me/m/${INSTAGRAM_HANDLE}`;
+
+      const setHref = (id, url) => {
+        const el = document.getElementById(id);
+        if (el) el.href = url;
+      };
+
+      setHref('nav-ig-link', igDmUrl);
+      setHref('form-ig-btn', igDmUrl);
+      setHref('lightbox-ig-btn', igDmUrl);
+      setHref('mobile-ig-link', igDmUrl);
+      setHref('footer-ig-link', igUrl);
+    });
+
+    // Gallery Filter Logic
+    function filterGallery(category, button) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active', 'bg-henna-gold', 'text-henna-900');
+        btn.classList.add('royal-card', 'text-stone-300');
+      });
+      button.classList.add('active', 'bg-henna-gold', 'text-henna-900');
+      button.classList.remove('royal-card', 'text-stone-300');
+
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Lightbox Logic
+    let currentActivePatternTitle = '';
+
+    function openLightbox(imgSrc, title, tag, desc) {
+      currentActivePatternTitle = title;
+      document.getElementById('lightbox-img').src = imgSrc;
+      document.getElementById('lightbox-title').innerText = title;
+      document.getElementById('lightbox-tag').innerText = tag;
+      document.getElementById('lightbox-desc').innerText = desc;
+
+      const modal = document.getElementById('lightbox');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    // Inquire from Lightbox -> populate form and scroll
+    function inquireFromLightbox() {
+      closeLightbox();
+      const notesField = document.getElementById('client-notes');
+      if (notesField && currentActivePatternTitle) {
+        notesField.value = `Interested in design pattern: "${currentActivePatternTitle}"`;
+      }
+      const inquirySec = document.getElementById('inquiry');
+      if (inquirySec) {
+        inquirySec.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          document.getElementById('client-name').focus();
+        }, 500);
+      }
+    }
+
+    // Service Card Selection -> select package & scroll to inquiry
+    function selectAndScrollPackage(packageName) {
+      const btns = document.querySelectorAll('.pkg-opt');
+      btns.forEach(b => {
+        if (b.innerText.includes(packageName.split(' ')[0])) {
+          selectEvent(packageName, b);
+        }
+      });
+      const inquirySec = document.getElementById('inquiry');
+      if (inquirySec) {
+        inquirySec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Inquiry Event Selection Logic
+    let selectedEventName = 'Royal Bridal Mehendi';
+
+    function selectEvent(name, btn) {
+      selectedEventName = name;
+      document.querySelectorAll('.pkg-opt').forEach(b => {
+        b.classList.remove('active', 'border-henna-gold', 'bg-henna-gold/15');
+        b.classList.add('border-stone-700', 'bg-stone-900/50');
+      });
+      btn.classList.add('active', 'border-henna-gold', 'bg-henna-gold/15');
+      btn.classList.remove('border-stone-700', 'bg-stone-900/50');
+    }
+
+    function updateGuestLabel() {
+      const val = document.getElementById('guest-slider').value;
+      document.getElementById('guest-count-label').innerText = `${val} Guests`;
+    }
+
+    // Form Submission Logic via Web3Forms
+    async function handleInquirySubmit(event) {
+      event.preventDefault();
+
+      const submitBtn = document.getElementById('submit-inquiry-btn');
+      const submitBtnText = document.getElementById('submit-btn-text');
+      const statusMsg = document.getElementById('inquiry-status-msg');
+
+      const name = document.getElementById('client-name').value.trim();
+      const phone = document.getElementById('client-phone').value.trim();
+      const email = document.getElementById('client-email').value.trim();
+      const date = document.getElementById('event-date').value;
+      const location = document.getElementById('event-location').value.trim();
+      const guests = document.getElementById('guest-slider').value;
+      const notes = document.getElementById('client-notes').value.trim() || 'No special requests specified.';
+
+      // Disable button & show spinner
+      submitBtn.disabled = true;
+      submitBtnText.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending Private Inquiry...`;
+      statusMsg.className = 'hidden';
+
+      // Check if user has entered their Web3Forms Access Key
+      if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === "YOUR_ACCESS_KEY_HERE") {
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtnText.innerHTML = `Send Booking Inquiry via Email`;
+
+          statusMsg.className = 'mt-3 p-3.5 rounded-xl text-xs bg-henna-800 border border-henna-gold/40 text-stone-200 block';
+          statusMsg.innerHTML = `
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-check text-henna-gold text-base mt-0.5"></i>
+              <div>
+                <strong class="text-henna-gold">Inquiry Prepared Successfully!</strong>
+                <p class="mt-1 text-stone-300">To have these inquiries emailed directly to your inbox without sharing your phone number, get your <strong>free key</strong> at <a href="https://web3forms.com" target="_blank" class="underline text-henna-gold font-bold">web3forms.com</a> and paste it into line 806 of this file.</p>
+                <p class="mt-2 text-stone-400">In the meantime, clients can also DM you anytime on Instagram <a href="https://instagram.com/${INSTAGRAM_HANDLE}" target="_blank" class="text-pink-300 underline font-semibold">@${INSTAGRAM_HANDLE}</a>.</p>
+              </div>
+            </div>
+          `;
+        }, 700);
+        return;
+      }
+
+      // Live submission to Web3Forms
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            access_key: WEB3FORMS_ACCESS_KEY,
+            subject: `New Bridal Henna Inquiry from ${name} (${selectedEventName})`,
+            from_name: "Rupali Mehendi Studio Portfolio",
+            client_name: name,
+            client_phone: phone,
+            client_email: email,
+            event_type: selectedEventName,
+            event_date: date,
+            event_location: location,
+            extra_guests: `${guests} Guests`,
+            design_notes: notes
+          })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          statusMsg.className = 'mt-3 p-3.5 rounded-xl text-xs bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 block';
+          statusMsg.innerHTML = `
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+              <div>
+                <strong>Thank you, ${name}!</strong> Your inquiry has been sent directly to Rupali. She will review your date and contact you privately shortly.
+              </div>
+            </div>
+          `;
+          document.getElementById('booking-inquiry-form').reset();
+          document.getElementById('guest-slider').value = 4;
+          updateGuestLabel();
+        } else {
+          throw new Error(result.message || 'Submission error');
+        }
+      } catch (err) {
+        statusMsg.className = 'mt-3 p-3.5 rounded-xl text-xs bg-red-950/80 border border-red-500/50 text-red-200 block';
+        statusMsg.innerHTML = `
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-triangle-exclamation text-red-400 text-lg"></i>
+            <div>
+              <strong>Submission could not be completed.</strong> Please check your connection or reach out directly via <a href="https://instagram.com/${INSTAGRAM_HANDLE}" target="_blank" class="underline text-pink-300">Instagram DM</a>.
+            </div>
+          </div>
+        `;
+      } finally {
+        submitBtn.disabled = false;
+        submitBtnText.innerHTML = `Send Booking Inquiry via Email`;
+      }
+    }
+  </script>
+</body>
+
+</html>
